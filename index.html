@@ -24,6 +24,7 @@
       integrity="sha384-wvfXpqpZZVQGK6TAh5PVlGOfQNHSoD2xbE+QkPxCAFlNEevoEH3Sl0sibVcOQVnN"
       crossorigin="anonymous"
     />
+    <link rel="stylesheet" href="https://unpkg.com/aos@next/dist/aos.css" />
     <link rel="stylesheet" href="./css/global.css" />
     <link rel="stylesheet" href="./css/styles.css" />
     <link rel="stylesheet" href="./css/carousel.css" />
@@ -149,10 +150,10 @@
     <header class="header">
       <section class="header__wrapper">
         <nav class="header__navigation">
-          <a href="#">
+          <a href="#" data-aos="fade-down">
             <img src="./assets/logo-caravela.svg" alt="Logo Caravela" />
           </a>
-          <ul class="header__nivagtion-icons">
+          <ul class="header__nivagtion-icons" data-aos="fade-up">
             <li>
               <a href="#"><i class="fa fa-instagram" aria-hidden="true"></i></a>
             </li>
@@ -177,12 +178,12 @@
             </li>
           </ul>
         </nav>
-        <h1 class="header-title">
+        <h1 class="header-title" data-aos="fade-right">
           Mar calmo nunca fez <br />
           bom marinheiro!
         </h1>
         <section class="header__footer">
-          <div class="header__footer-description">
+          <div class="header__footer-description" data-aos="fade-up-right">
             <p>
               Algumas agências até tem a coragem para vencer desafios. <br />
               <span>Nós temos hábitos</span>
@@ -193,9 +194,10 @@
             <img
               src="./assets/solicitar_orcamento.svg"
               alt="Solicitar orçamento"
+              data-aos="fade-up-left"
             />
-            <span>Solicitar Orçamento</span>
-            <i class="fas fa-arrow-right"></i>
+            <span data-aos="fade-up-left">Solicitar Orçamento</span>
+            <i class="fas fa-arrow-right" data-aos="fade-up-left"></i>
           </div>
         </section>
       </section>
@@ -624,5 +626,11 @@
     <script src="./js/sidebar.js"></script>
     <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/1.20.4/TweenMax.min.js"></script>
     <script src="./js/modal.js"></script>
+    <script src="https://unpkg.com/aos@next/dist/aos.js"></script>
+    <script>
+      AOS.init({
+        duration: 1500
+      });
+    </script>
   </body>
 </html>
