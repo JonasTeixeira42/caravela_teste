@@ -30,6 +30,75 @@
     <link rel="stylesheet" href="./css/hamburguer-animation.css" />
   </head>
   <body>
+    <aside class="sidebar">
+      <img src="./assets/logo-caravela.svg" alt="logo caravela">
+
+      <nav class="sidebar__option">
+        <ul>
+          <li>
+            <a href="#" onclick="clodeSideBar()">
+              <div>
+                <span>Home</span><i class="fas fa-arrow-right"></i>
+              </div>
+            </a>
+          </li>
+          <li>
+            <a href="#services" onclick="clodeSideBar()">
+              <div>
+                <span>Serviços</span><i class="fas fa-arrow-right"></i>
+              </div>
+            </a>
+          </li>
+          <li>
+            <a href="#cases" onclick="clodeSideBar()">
+              <div>
+                <span>Cases</span><i class="fas fa-arrow-right"></i>
+              </div>
+            </a>
+          </li>
+          <li>
+            <a href="#blog" onclick="clodeSideBar()">
+              <div>
+                <span>Blog</span><i class="fas fa-arrow-right"></i>
+              </div>
+            </a>
+          </li>
+          <li>
+            <a href="#budget" onclick="clodeSideBar()">
+              <div>
+                <span>Orçamento</span><i class="fas fa-arrow-right"></i>
+              </div>
+            </a>
+          </li>
+        </ul>
+      </nav>
+
+      <div class="contact__information">
+        <span>35 3722-2350</span>
+        <ul>
+          <li>
+            <a href="https://www.google.com/" target="_blank">
+              <i class="fa fa-instagram" aria-hidden="true"></i>
+            </a>
+          </li>
+          <li>
+            <a href="#">
+              <i class="fa fa-facebook" aria-hidden="true"></i>
+            </a>
+          </li>
+          <li>
+            <a href="#">
+              <i class="fa fa-whatsapp" aria-hidden="true"></i>
+            </a>
+          </li>
+        </ul>
+      </div>
+
+      <p class="adress">
+        Rua Rio Grande do Sul, 1182 - Centro Poços de Caldas MG - CEP 37701-001
+      </p>
+    </aside>
+
     <header class="header">
       <section class="header__wrapper">
         <nav class="header__navigation">
@@ -52,9 +121,9 @@
               </a>
             </li>
             <li class="hamburguer__option">
-              <input type="checkbox" id="menu-hamburguer">
+              <input type="checkbox" id="menu-hamburguer" onchange="handleSideBarMenu()">
               <label id="hamburguer-label" for="menu-hamburguer">
-                <div>
+                <div class="menu">
                   <span class="hamburguer"></span>
                 </div>
               </label>
@@ -85,7 +154,7 @@
       </section>
     </header>
     <main>
-      <section class="about">
+      <section class="about" id="about">
         <div class="about-title">
           <h1>A agência</h1>
           <img src="./assets/icon-marujo.svg" alt="Icone Marujo" />
@@ -172,7 +241,7 @@
         </div>
       </section>
 
-      <h2 class="section__title">O que podemos fazer pela sua empresa!</h1>
+      <h2 class="section__title" id="services">O que podemos fazer pela sua empresa!</h1>
       <section class="services">
         <article class="services__card">
           <img
@@ -266,7 +335,9 @@
         </article>
       </section>
 
-      <h2 class="section__title section__title-margin">Veja nossos projetos</h2>
+      <h2 class="section__title section__title-margin" id="cases">
+        Veja nossos projetos
+      </h2>
       <section class="cases">
         <img src="./assets/seta-verde.svg" alt="seta verde">
         <div
@@ -346,7 +417,7 @@
           </div>
         </div>     
       </section>
-      <section class="blog">
+      <section class="blog" id="blog">
         <div class="blog__header">
           <div class="blog__header-title">
             <h2>Blog dos Marujos</h2>
@@ -457,7 +528,7 @@
       </section>
     </main>
 
-    <footer>
+    <footer id="budget">
       <nav class="footer__header">
         <a href="#">
           <img src="./assets/logo-caravela-rodape.svg" alt="Logo caravela">
@@ -503,5 +574,6 @@
       </div>
     </footer>
     <script src="https://unpkg.com/flickity@2/dist/flickity.pkgd.min.js"></script>
+    <script src="./js/sidebar.js"></script>
   </body>
 </html>

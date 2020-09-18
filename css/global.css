@@ -5,12 +5,18 @@
   outline: 0;
 }
 
+html {
+  scroll-behavior: smooth;
+}
+
 body {
   background: #fff;
   -webkit-font-smoothing: antialiased;
   font-family: 'Poppins', serif;
   min-width: 100%;
   overflow-x: hidden;
+  position: relative;
+  height: 100vh;
 }
 
 body,

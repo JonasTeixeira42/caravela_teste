@@ -1,14 +1,10 @@
-.hamburguer-wrapper,
-.hamburguer__option {
-  cursor: pointer;
-}
-
-.hamburguer__option div {
+.hamburguer__option div.menu {
   width: 30px;
   height: 30px;
   display: flex;
   align-items: center;
   justify-content: center;
+  cursor: pointer;
 }
 
 .hamburguer__option .hamburguer {
@@ -64,4 +60,100 @@ input#menu-hamburguer:checked ~ label#hamburguer-label .hamburguer:before {
 input#menu-hamburguer:checked ~ label#hamburguer-label .hamburguer:after {
   transform: rotate(90deg);
   bottom: 0;
+}
+
+aside.sidebar {
+  position: fixed;
+  height: 100vh;
+  width: min(450px, 45vw);
+  background: #333;
+  top: 0;
+  left: -40%;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  padding: 55px 75px;
+  z-index: 1;
+  transition: left 0.5s;
+}
+
+aside.sidebar img {
+  text-align: left;
+}
+
+aside.sidebar nav.sidebar__option {
+  margin-top: 93px;
+  width: 100%;
+  flex: 1;
+}
+
+aside.sidebar nav.sidebar__option ul li {
+  margin-bottom: 42px;
+}
+
+aside.sidebar nav.sidebar__option ul li div {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  font-weight: 500;
+  font-size: 22px;
+  line-height: 130%;
+  letter-spacing: 0.02em;
+  color: #808080;
+  transition: color 0.3s;
+}
+
+aside.sidebar nav.sidebar__option ul li div:hover {
+  color: #00ffb2;
+}
+
+aside.sidebar nav.sidebar__option ul li div i {
+  visibility: hidden;
+}
+
+aside.sidebar nav.sidebar__option ul li div:hover i {
+  visibility: visible;
+}
+
+.contact__information {
+  width: 100%;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  margin-bottom: 44px;
+  color: #74a798;
+}
+
+.contact__information span {
+  font-size: 14px;
+}
+
+.contact__information ul {
+  display: flex;
+}
+
+.contact__information ul li {
+  margin-right: 19px;
+}
+
+.contact__information ul li:last-of-type {
+  margin-right: 0;
+}
+
+.contact__information ul li a i {
+  color: #74a798;
+  font-size: 18px;
+  transition: color 0.3s;
+}
+
+.contact__information ul li a i:hover {
+  color: #00ffb2;
+}
+
+aside.sidebar p.adress {
+  width: 100%;
+  font-weight: 500;
+  font-size: 16px;
+  line-height: 22px;
+  color: #74a798;
 }
