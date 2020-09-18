@@ -1,0 +1,146 @@
+@import url('https://fonts.googleapis.com/css2?family=Saira:wght@400;800&display=swap');
+
+.carousel {
+  background: transparent;
+}
+
+.carousel .flickity-viewport {
+  width: 100%;
+}
+
+.carousel-cell {
+  width: 280px;
+  height: 314px;
+  border-radius: 1px;
+  margin-right: 25px;
+  margin-bottom: 50px;
+  cursor: pointer;
+  position: relative;
+  overflow: hidden;
+  transition: all 0.3s;
+  background-color: black;
+}
+
+.carousel-cell .carousel-img-holder {
+  width: 100%;
+  height: 100%;
+  background-position: center;
+  background-size: cover;
+  background-repeat: no-repeat;
+  transition: all 0.5s;
+}
+
+.carousel-cell .carousel-img-holder:hover {
+  transform: scale(1.2);
+}
+
+.carousel-cell:hover {
+  box-shadow: 0px 40px 60px -30px rgba(0, 255, 178, 0.3);
+}
+
+main .carousel .carousel-cell .carousel-img-holder .card__information {
+  display: flex;
+  flex-direction: column;
+  position: absolute;
+  bottom: -20%;
+  left: 16%;
+  transition: all 0.5s;
+}
+
+main .carousel .carousel-cell:hover .carousel-img-holder .card__information {
+  bottom: 16%;
+}
+
+main
+  .carousel
+  .carousel-cell
+  .carousel-img-holder
+  .card__information
+  span.card__information-name {
+  font-size: 22px;
+  font-weight: 600;
+  color: #00ffb2;
+  letter-spacing: 0.02em;
+}
+
+main
+  .carousel
+  .carousel-cell
+  .carousel-img-holder
+  .card__information
+  span.card__information-position {
+  font-size: 18px;
+  color: #fff;
+}
+
+.flickity-prev-next-button {
+  width: 16px;
+  height: 16px;
+}
+
+.flickity-prev-next-button.previous {
+  left: -50px;
+  top: 45%;
+}
+.flickity-prev-next-button.next {
+  right: -50px;
+  top: 45%;
+}
+
+.carousel-cell-cases {
+  width: 565px;
+  height: 674px;
+  border-radius: 12px;
+  margin-right: 25px;
+  cursor: pointer;
+  position: relative;
+  overflow: hidden;
+  transition: all 0.3s;
+}
+
+.carousel-cell-cases .carousel__cell-image {
+  height: 372px;
+  width: 100%;
+  background-position: center;
+  background-size: cover;
+  background-repeat: no-repeat;
+}
+
+.bg-1 {
+  background: url('../assets/projetos-1.jpg');
+}
+
+.bg-2 {
+  background: url('../assets/projetos-2.jpg');
+}
+
+.carousel-cell-cases .carousel__cell-body {
+  height: 302px;
+  width: 100%;
+  padding: 48px;
+}
+
+.carousel-cell-cases .carousel__cell-body h3.carousel__cell-title {
+  font-size: 22px;
+  font-weight: 600;
+  color: #333333;
+  margin-bottom: 16px;
+}
+
+.carousel-cell-cases .carousel__cell-body .carousel__cell-description {
+  font-size: 16px;
+  line-height: 22px;
+  color: #696969;
+  max-width: 445px;
+  margin-bottom: 54px;
+}
+
+.carousel-cell-cases .carousel__cell-body .carousel__cell-link {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  height: 43px;
+  width: 43px;
+  background: #00ffb2;
+  border-radius: 50%;
+}
