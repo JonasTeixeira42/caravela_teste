@@ -28,6 +28,7 @@
     <link rel="stylesheet" href="./css/styles.css" />
     <link rel="stylesheet" href="./css/carousel.css" />
     <link rel="stylesheet" href="./css/hamburguer-animation.css" />
+    <link rel="stylesheet" href="./css/modal.css">
   </head>
   <body>
     <aside class="sidebar">
@@ -99,6 +100,52 @@
       </p>
     </aside>
 
+    <section class="modal">
+      <div class="modal__box">
+        <div class="modal__header">
+          <div class="modal__title">Solicitar orçamento</div>
+          <div class="modal__close">&times;</div>
+        </div>
+        <div class="modal__content">
+          <div class="modal__text">
+            Envie sua mensagem preenchendo os
+            campos abaixo responderemos o mais
+            rápido possível
+          </div>
+          <form action="" class="modal__form">
+            <input type="text" name="name" placeholder="name">
+            <input type="email" name="email" placeholder="E-mail">
+            <input type="text" name="phone" placeholder="Telefone">
+            <textarea name="message" rows="4" cols="20" placeholder="Mensagem">
+            </textarea>
+            <button type="submit">
+              <i class="fas fa-arrow-right"></i>
+            </button>
+          </form>
+          <div class="contact__information">
+            <span>35 3722-2350</span>
+            <ul>
+              <li>
+                <a href="https://www.google.com/" target="_blank">
+                  <i class="fa fa-instagram" aria-hidden="true"></i>
+                </a>
+              </li>
+              <li>
+                <a href="#">
+                  <i class="fa fa-facebook" aria-hidden="true"></i>
+                </a>
+              </li>
+              <li>
+                <a href="#">
+                  <i class="fa fa-whatsapp" aria-hidden="true"></i>
+                </a>
+              </li>
+            </ul>
+          </div>
+        </div>
+      </div>
+    </section>
+
     <header class="header">
       <section class="header__wrapper">
         <nav class="header__navigation">
@@ -142,7 +189,7 @@
             </p>
           </div>
 
-          <div class="header__footer-budget">
+          <div class="header__footer-budget" onclick="fadeIn()">
             <img
               src="./assets/solicitar_orcamento.svg"
               alt="Solicitar orçamento"
@@ -575,5 +622,7 @@
     </footer>
     <script src="https://unpkg.com/flickity@2/dist/flickity.pkgd.min.js"></script>
     <script src="./js/sidebar.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/1.20.4/TweenMax.min.js"></script>
+    <script src="./js/modal.js"></script>
   </body>
 </html>
