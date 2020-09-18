@@ -1,0 +1,67 @@
+.hamburguer-wrapper,
+.hamburguer__option {
+  cursor: pointer;
+}
+
+.hamburguer__option div {
+  width: 30px;
+  height: 30px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.hamburguer__option .hamburguer {
+  display: block;
+  width: 23px;
+  height: 3px;
+  background: #fff;
+  position: relative;
+  transition: background 0.3s;
+  transition: 0.5s ease-in-out;
+}
+
+.hamburguer__option:hover .hamburguer,
+.hamburguer__option:hover .hamburguer:before,
+.hamburguer__option:hover .hamburguer:after {
+  background: #00ffb2;
+}
+
+.hamburguer:before,
+.hamburguer:after {
+  content: '';
+  display: block;
+  background: #fff;
+  height: 100%;
+  width: 100%;
+  position: absolute;
+  cursor: pointer;
+  transition: background 0.3s;
+  transition: 0.5s ease-in-out;
+}
+
+.hamburguer:before {
+  top: -6px;
+}
+
+.hamburguer:after {
+  bottom: -6px;
+}
+
+input#menu-hamburguer {
+  display: none;
+}
+
+input#menu-hamburguer:checked ~ label#hamburguer-label .hamburguer {
+  transform: rotate(45deg);
+}
+
+input#menu-hamburguer:checked ~ label#hamburguer-label .hamburguer:before {
+  transform: rotate(90deg);
+  top: 0;
+}
+
+input#menu-hamburguer:checked ~ label#hamburguer-label .hamburguer:after {
+  transform: rotate(90deg);
+  bottom: 0;
+}
