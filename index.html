@@ -150,10 +150,10 @@
     <header class="header">
       <section class="header__wrapper">
         <nav class="header__navigation">
-          <a href="#" data-aos="fade-down">
+          <a href="#" data-aos="fade-down" data-aos-mirror="false">
             <img src="./assets/logo-caravela.svg" alt="Logo Caravela" />
           </a>
-          <ul class="header__nivagtion-icons" data-aos="fade-up">
+          <ul class="header__nivagtion-icons" data-aos="fade-up" data-aos-mirror="false">
             <li>
               <a href="#"><i class="fa fa-instagram" aria-hidden="true"></i></a>
             </li>
@@ -205,13 +205,13 @@
     <main>
       <section class="about" id="about">
         <div class="about-title">
-          <h1>A agência</h1>
-          <img src="./assets/icon-marujo.svg" alt="Icone Marujo" />
-          <span>nossos marujos!</span>
-          <img src="./assets/seta-verde.svg" alt="Seta Imagem" />
+          <h1 data-aos="zoom-in-right">A agência</h1>
+          <img data-aos="zoom-out-up" src="./assets/icon-marujo.svg" alt="Icone Marujo" />
+          <span data-aos="zoom-out-up">nossos marujos!</span>
+          <img data-aos="zoom-out-up" src="./assets/seta-verde.svg" alt="Seta Imagem" />
         </div>
         <div class="about-description">
-          <p>
+          <p data-aos="zoom-in-left">
             A Caravela nasceu há dez anos com um propósito: fazer diferente no
             seu mercado. Isso significa estar conectada ao que há de mais atual
             na área de comunicação e marketing digital. Sabemos por que sua
@@ -219,7 +219,7 @@
             diferenciar. Afinal, navegar é preciso.
           </p>
 
-          <p>
+          <p data-aos="zoom-out-down">
             Nesse período nos especializamos em atuar nos quatro pilares da
             Comunicação Integrada no Marketing: Marketing Digital, Assessoria de
             Imprensa, Comunicação Interna, Publicidade e Propaganda.
@@ -231,6 +231,7 @@
         <div
           class="carousel"
           data-flickity='{ "autoPlay": 5000, "pauseAutoPlayOnHover": true, "pageDots": false, "groupCells": true, "draggable": true, "cellAlign": "left"}'
+          data-aos="zoom-out"
         >
           <div class="carousel-cell">
             <div
@@ -629,7 +630,8 @@
     <script src="https://unpkg.com/aos@next/dist/aos.js"></script>
     <script>
       AOS.init({
-        duration: 1500
+        duration: 1500,
+        mirror: true,
       });
     </script>
   </body>
