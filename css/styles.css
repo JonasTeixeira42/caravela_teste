@@ -240,7 +240,8 @@ main section.services article.services__card div.service__card-content p {
 }
 
 main section.cases {
-  width: 1220px;
+  width: 100%;
+  max-width: 1220px;
   margin: 0 auto;
   border-bottom: 1px solid #d5d5d5;
 }

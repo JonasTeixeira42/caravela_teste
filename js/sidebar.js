@@ -11,5 +11,5 @@ function handleSideBarMenu() {
 
 function clodeSideBar() {
   document.getElementById('menu-hamburguer').checked = false;
-  document.querySelector('.sidebar').style.left = '-50%';
+  document.querySelector('.sidebar').style.left = '-100%';
 }
