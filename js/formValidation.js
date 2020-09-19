@@ -40,13 +40,15 @@ const validations = {
 document.querySelectorAll('form.modal__form input').forEach(($input) => {
   const field = $input.dataset.js;
 
-  $input.addEventListener(
-    'input',
-    (event) => {
-      event.target.value = masks[field](event.target.value);
-    },
-    false
-  );
+  if (field) {
+    $input.addEventListener(
+      'input',
+      (event) => {
+        event.target.value = masks[field](event.target.value);
+      },
+      false
+    );
+  }
 });
 
 document.getElementById('modal__submit').addEventListener(
