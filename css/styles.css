@@ -320,8 +320,15 @@ main section.blog .blog__header .blog__header-link {
   font-size: 18px;
 }
 
-main section.blog .blog__header .blog__header-link a span {
+main section.blog .blog__header .blog__header-link a span,
+main section.blog .blog__header .blog__header-link a:hover i {
   color: #333;
+  transition: all 0.3s;
+}
+
+main section.blog .blog__header .blog__header-link a:hover span,
+main section.blog .blog__header .blog__header-link a:hover i {
+  color: #00ffb2;
 }
 
 main section.blog .blog__header .blog__header-link i {
