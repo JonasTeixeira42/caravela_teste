@@ -148,6 +148,19 @@
       </div>
     </section>
 
+    <nav id="fixed__header">
+      <div class="header__wrapper">
+        <img src="./assets/logo-caravela.svg" alt="Logo Caravela">
+        <div class="hamburguer__option">
+          <input type="checkbox" id="menu-hamburguer-fixed" onchange="handleSideBarMenuFixed()">
+          <label class="hamburguer-label-fixed" for="menu-hamburguer-fixed">
+          <div class="menu">
+            <span class="hamburguer"></span>
+          </div>
+        </div>
+      </div>
+    </nav>
+
     <header class="header">
       <section class="header__wrapper">
         <nav class="header__navigation">
@@ -173,7 +186,7 @@
             </li>
             <li class="hamburguer__option">
               <input type="checkbox" id="menu-hamburguer" onchange="handleSideBarMenu()">
-              <label id="hamburguer-label" for="menu-hamburguer">
+              <label class="hamburguer-label fixed__hamburger" for="menu-hamburguer">
                 <div class="menu">
                   <span class="hamburguer"></span>
                 </div>
@@ -652,6 +665,7 @@
     <script src="./js/sidebar.js"></script>
     <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/1.20.4/TweenMax.min.js"></script>
     <script src="./js/modal.js"></script>
+    <script src="./js/fixedHeader.js"></script>
     <script src="https://unpkg.com/aos@next/dist/aos.js"></script>
     <script>
       AOS.init({

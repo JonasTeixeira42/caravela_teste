@@ -7,6 +7,36 @@ header.header {
   background-size: cover;
 }
 
+nav#fixed__header {
+  position: fixed;
+  top: -40%;
+  left: 0;
+  width: 100%;
+  background: #333;
+  padding: 30px;
+  z-index: 2;
+  box-shadow: 0px 3px 3px 0px rgba(0, 0, 0, 0.2);
+  transition: top 0.3s;
+}
+
+nav#fixed__header input {
+  display: none;
+}
+
+nav#fixed__header .header__wrapper {
+  width: 100%;
+  max-width: 1220px;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  margin: 0 auto;
+}
+
+nav#fixed__header .header__wrapper img {
+  width: 203px;
+  height: 52px;
+}
+
 header.header section.header__wrapper {
   display: flex;
   flex-direction: column;

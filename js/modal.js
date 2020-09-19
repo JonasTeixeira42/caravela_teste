@@ -1,6 +1,5 @@
 const modal = document.querySelector('.modal');
 const modalClose = document.querySelector('.modal__close');
-
 const modalBox = document.querySelector('.modal__box');
 
 modalClose.addEventListener('click', close);

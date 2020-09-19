@@ -44,20 +44,21 @@
   bottom: -6px;
 }
 
+input#menu-hamburguer-fixed,
 input#menu-hamburguer {
   display: none;
 }
 
-input#menu-hamburguer:checked ~ label#hamburguer-label .hamburguer {
+input:checked ~ label .hamburguer {
   transform: rotate(45deg);
 }
 
-input#menu-hamburguer:checked ~ label#hamburguer-label .hamburguer:before {
+input:checked ~ label .hamburguer:before {
   transform: rotate(90deg);
   top: 0;
 }
 
-input#menu-hamburguer:checked ~ label#hamburguer-label .hamburguer:after {
+input:checked ~ label .hamburguer:after {
   transform: rotate(90deg);
   bottom: 0;
 }
