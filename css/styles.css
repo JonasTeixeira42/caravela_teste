@@ -557,7 +557,7 @@ footer .footer__body .footer__budget a span {
   transition: color 0.3s;
 }
 
-footer .footer__body .footer__budget a span:hover {
+footer .footer__body .footer__budget a:hover span {
   color: #00ffb2;
 }
 
