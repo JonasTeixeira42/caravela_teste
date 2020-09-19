@@ -114,8 +114,12 @@
             campos abaixo responderemos o mais
             rápido possível
           </div>
-          <form action="" class="modal__form">
-            <input type="text" name="name" placeholder="name">
+          <form 
+            class="modal__form" 
+            method="POST" 
+            name="data" 
+          >
+            <input type="text" name="name" placeholder="name" maxlength="50">
             <input 
               type="email" 
               name="email" 
@@ -127,9 +131,15 @@
               name="phone" 
               placeholder="Telefone"
             >
-            <textarea name="message" rows="4" cols="20" placeholder="Mensagem">
-            </textarea>
-            <button type="submit">
+            <textarea 
+              name="message" 
+              rows="4" 
+              cols="20" 
+              placeholder="Mensagem" 
+              maxlength="300"
+            ></textarea>
+
+            <button id="modal__submit" type="submit">
               <i class="fas fa-arrow-right"></i>
             </button>
           </form>
