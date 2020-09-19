@@ -309,6 +309,7 @@ main section.blog section.blog__content {
 main section.blog section.blog__content article.blog__card {
   width: 382px;
   margin-right: 32px;
+  margin-bottom: 35px;
   border-radius: 12px;
   overflow: hidden;
 }

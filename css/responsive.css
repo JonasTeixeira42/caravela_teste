@@ -69,6 +69,16 @@
   }
 }
 
+@media screen and (max-width: 990px) {
+  main section.blog .blog__header {
+    flex-direction: column;
+  }
+
+  main section.blog section.blog__content article.blog__card {
+    margin-right: 10px;
+  }
+}
+
 @media screen and (max-width: 500px) {
   .header__logo {
     height: 26px;
