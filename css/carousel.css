@@ -92,7 +92,6 @@ main
   height: 674px;
   border-radius: 12px;
   margin-right: 25px;
-  cursor: pointer;
   position: relative;
   overflow: hidden;
   transition: all 0.3s;
@@ -118,6 +117,19 @@ main
   height: 302px;
   width: 100%;
   padding: 48px;
+  cursor: pointer;
+  position: relative;
+  overflow: hidden;
+}
+
+.carousel-cell-cases .carousel__cell-body:hover h3.carousel__cell-title,
+.carousel-cell-cases .carousel__cell-body:hover .carousel__cell-description {
+  color: #00ffb2;
+}
+
+.carousel-cell-cases .carousel__cell-body:hover h3.carousel__cell-title,
+.carousel-cell-cases .carousel__cell-body:hover .carousel__cell-description {
+  transition: color 0.3s;
 }
 
 .carousel-cell-cases .carousel__cell-body h3.carousel__cell-title {
@@ -143,4 +155,12 @@ main
   width: 43px;
   background: #00ffb2;
   border-radius: 50%;
+  color: #000;
+  position: absolute;
+  left: -20%;
+  transition: left 0.4s;
+}
+
+.carousel-cell-cases .carousel__cell-body:hover .carousel__cell-link {
+  left: 8%;
 }
