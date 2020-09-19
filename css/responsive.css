@@ -79,6 +79,31 @@
   }
 }
 
+@media screen and (max-width: 760px) {
+  footer div.footer__body {
+    flex-direction: column;
+  }
+
+  footer .footer__body .footer__address {
+    text-align: center;
+    margin-bottom: 30px;
+  }
+
+  footer .footer__body .footer__budget {
+    text-align: left;
+  }
+}
+
+@media screen and (max-width: 650px) {
+  footer .footer__header {
+    flex-direction: column;
+  }
+
+  footer .footer__header a {
+    margin-bottom: 30px;
+  }
+}
+
 @media screen and (max-width: 500px) {
   .header__logo {
     height: 26px;
