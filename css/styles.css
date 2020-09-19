@@ -138,43 +138,43 @@ main {
 
 main section.about {
   display: flex;
+  flex-direction: column;
   justify-content: space-between;
-  width: 1180px;
+  width: 100%;
+  max-width: 1220px;
   margin: 80px auto 0;
 }
 
-main section.about div:nth-child(2) {
-  max-width: 696px;
-}
-
-main section.about div.about-title {
+main section.about div {
   display: flex;
-  flex-direction: column;
+  justify-content: space-between;
 }
 
 main section.about div.about-title h1 {
-  font-size: 54px;
+  font-size: min(54px, 5vw);
   font-weight: 600;
   color: #1d343e;
 }
 
-main section.about div.about-title span {
+.about__image {
   text-align: center;
   font-size: 18px;
   color: #74a798;
-  margin: 9px 0 18px;
-  display: inline-block;
+  margin: 9px 0 18px 50px;
+  display: flex;
+  flex-direction: column;
 }
 
 main section.about div.about-title img:nth-child(2) {
   margin-top: 80px;
 }
 
-main section.about div.about-description {
+.about-description {
   font-size: 18px;
   line-height: 170%;
   color: #696969;
   margin-bottom: 65px;
+  max-width: 696px;
 }
 
 main section.about div.about-description p:nth-child(1) {
