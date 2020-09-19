@@ -56,19 +56,21 @@ header.header
   section.header__wrapper
   nav.header__navigation
   ul.header__nivagtion-icons
-  li
-  a.header__navigation-phone {
+  li.header__navigation-phone
+  span {
   margin: 0 44px 0 32px;
   font-size: 14px;
+  color: #fff;
 }
 
 header.header section.header__wrapper h1.header-title {
   margin: 123px 0 84px;
-  font-size: 70px;
+  font-size: min(70px, 7vw);
   line-height: 130%;
   letter-spacing: 2%;
   font-weight: 600;
   color: #00ffb2;
+  max-width: 769px;
 }
 
 header.header section.header__wrapper section.header__footer {
@@ -103,6 +105,7 @@ header.header
   .header__footer-budget {
   display: flex;
   align-items: center;
+  justify-content: space-between;
   color: #fff;
   transition: color 0.3s;
   cursor: pointer;
@@ -253,7 +256,8 @@ main section.cases img + div {
 }
 
 main section.blog {
-  width: 1220px;
+  width: 100%;
+  max-width: 1220px;
   margin: 80px auto;
   padding-bottom: 90px;
 }

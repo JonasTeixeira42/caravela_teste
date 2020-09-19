@@ -1,0 +1,36 @@
+@media screen and (max-width: 1220px) {
+  header.header {
+    padding: 0 30px;
+  }
+}
+
+@media screen and (max-width: 990px) {
+  header.header section.header__wrapper h1.header-title {
+    align-self: center;
+    text-align: center;
+  }
+
+  .header__footer {
+    flex-direction: column;
+  }
+
+  .header__footer-description p {
+    text-align: center;
+    margin-bottom: 40px;
+  }
+
+  header.header
+    section.header__wrapper
+    nav.header__navigation
+    ul.header__nivagtion-icons
+    li:not(:last-child) {
+    display: none;
+  }
+}
+
+@media screen and (max-width: 500px) {
+  .header__logo {
+    height: 26px;
+    width: 103px;
+  }
+}

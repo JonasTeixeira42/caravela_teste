@@ -5,10 +5,11 @@ function handleSideBarMenu() {
     document.querySelector('.sidebar').style.left = '0';
     return;
   }
-  document.querySelector('.sidebar').style.left = '-40%';
+
+  clodeSideBar();
 }
 
 function clodeSideBar() {
   document.getElementById('menu-hamburguer').checked = false;
-  document.querySelector('.sidebar').style.left = '-40%';
+  document.querySelector('.sidebar').style.left = '-50%';
 }

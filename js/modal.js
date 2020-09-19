@@ -8,6 +8,7 @@ modalClose.addEventListener('click', close);
 function fadeIn() {
   document.getElementById('menu-hamburguer').checked = false;
   document.querySelector('.sidebar').style.left = '-40%';
+  document.querySelector('.sidebar').style.width = 'min(450px, 45vw);';
 
   TweenMax.to(modal, 0.5, { autoAlpha: 1 });
   TweenMax.from(modalBox, 0.5, { autoAlpha: 0, top: 300 });

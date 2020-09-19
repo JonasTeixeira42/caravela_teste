@@ -30,6 +30,7 @@
     <link rel="stylesheet" href="./css/carousel.css" />
     <link rel="stylesheet" href="./css/hamburguer-animation.css" />
     <link rel="stylesheet" href="./css/modal.css">
+    <link rel="stylesheet" href="./css/responsive.css">
   </head>
   <body>
     <aside class="sidebar">
@@ -151,7 +152,11 @@
       <section class="header__wrapper">
         <nav class="header__navigation">
           <a href="#" data-aos="fade-down" data-aos-mirror="false">
-            <img src="./assets/logo-caravela.svg" alt="Logo Caravela" />
+            <img 
+              src="./assets/logo-caravela.svg" 
+              alt="Logo Caravela" 
+              class="header__logo"
+            />
           </a>
           <ul class="header__nivagtion-icons" data-aos="fade-up" data-aos-mirror="false">
             <li>
@@ -163,10 +168,8 @@
             <li>
               <a href="#"><i class="fa fa-whatsapp" aria-hidden="true"></i></a>
             </li>
-            <li>
-              <a href="#" class="header__navigation-phone">
-                <span>35 3722-2350</span>
-              </a>
+            <li class="header__navigation-phone">
+              <span>35 3722-2350</span>
             </li>
             <li class="hamburguer__option">
               <input type="checkbox" id="menu-hamburguer" onchange="handleSideBarMenu()">
@@ -179,7 +182,7 @@
           </ul>
         </nav>
         <h1 class="header-title" data-aos="fade-right">
-          Mar calmo nunca fez <br />
+          Mar calmo nunca fez <br>
           bom marinheiro!
         </h1>
         <section class="header__footer">
