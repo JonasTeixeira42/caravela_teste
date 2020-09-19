@@ -65,13 +65,13 @@ input#menu-hamburguer:checked ~ label#hamburguer-label .hamburguer:after {
 aside.sidebar {
   position: fixed;
   height: 100vh;
-  width: min(450px, 50vw);
+  width: min(450px, 55vw);
   background: #333;
   top: 0;
   left: -100%;
   display: flex;
   flex-direction: column;
-  align-items: center;
+  align-items: flex-start;
   padding: 55px 75px;
   z-index: 1;
   transition: left 0.5s;
@@ -96,7 +96,7 @@ aside.sidebar nav.sidebar__option ul li div {
   justify-content: space-between;
   align-items: center;
   font-weight: 500;
-  font-size: 22px;
+  font-size: min(22px, 4vw);
   line-height: 130%;
   letter-spacing: 0.02em;
   color: #808080;
